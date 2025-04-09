@@ -1,0 +1,14 @@
+body{
+    background-attachment: faded red
+    ;}
+    form{
+        display: formulario2.0
+     ;
+        flex-direction: column
+        text -align: center;
+    }
+    .formulario2.0{
+        margin top: 20px
+        margin-left:20%
+
+    }
