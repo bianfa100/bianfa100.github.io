@@ -1,80 +1,43 @@
-body{
-font-family: arial, sans-serif;
-line-height: 1.6;
-margin: 0;
-padding: 0;
-}
-header{
-    background:#333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-nav ul{
-    list-style: none;
+/* styles.css */
+* {
+    margin: 0;
     padding: 0;
-}
-nav ul li{
-    display: inline;
-    margin: 0 10px;
-}
-nav ul li a{
-    color:#fff;
-    text-decoration: none;
-}
-#about {
-padding: 20px;
-background: #f4f4f4;
-}
-#about h2 {
-    margin-top: 0;
-}
-.gallery {
- display: flex;
- flex-wrap: wrap;
- gap: 20px;
- justify-content: center; 
-}
-.project{
-    width: 300px;
-    padding: 10px;
-    background: #fff;
-    border: 1px solid #ddd;
-    text-align: center;
-}
-.project img{
-    max-width: 100%;
-    heigth : auto;
-}
-#contact{
-    padding: 20px;
-}
-form{
-    display: flex;
-    flex-direction: column;
-}
-form label{
-    margin-bottom: 5px;
-}
-form input, form textarea{
-margin-bottom: 10px;
-padding: 10px;
-font-size: 16px;
-}
-form input[type="submit"]{
-background: #333;
-color: #fff;
-border:none;
-cursor: pointer;
-}
-@media (max-width: 600px)
-nav ul{ 
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-.gallery {
-flex-direction: column;
-align-items: center;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fondo de la página */
+}
+
+.slider-container {
+    width: 100%;
+    max-width: 800px; /* Ajusta el tamaño máximo del slider */
+    margin: 50px auto; /* Centra el slider horizontalmente */
+    overflow: hidden; /* Esconde las imágenes que se desplazan fuera del contenedor */
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease; /* Animación para el cambio de imagen */
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 1s ease-in-out;
+    opacity: 0; /* Inicialmente las imágenes no son visibles */
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.fade {
+    opacity: 0; /* Por defecto las imágenes estarán ocultas */
+}
+
+.fade.active {
+    opacity: 1; /* La imagen activa será visible */
+}

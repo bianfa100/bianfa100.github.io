@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
- <header>
-    <h1>MI PORTAFOLIO</h1>
-    <nav>
-    <ul>
-<li><a href="#about">Sobre mi</a></li>
-<li><a href="#portfolio">portafolio</a></li>
-<li><a href="#contact">contacto</a></li>
-        </ul>
-    </nav>
- </header> 
- <section id="about">
-    <h2>Sobre Mí</h2>
-    <p>Hola, soy Fabian Yesid Araque Florez, un desarrollador web apasionado por investigar soluciones creativas e innovadoras</p>
- </section> 
- <section id="portfolio" >
- <h2>Portafolio</h2> 
- <div class="gallery">
- <div class="project">
-<img src="proyecto1.jpg" alt="proyecto 1">
-<p>En este proyecto utilice HTML para incorporar diferentes elementos de diseño y crear una página web atractiva</p>
-</div>
-</section>
-<section id="contact">
-    <h2>contacto</h2>
-    <form action="submit"   method="post">
- <label for="name">Nombre</label>
- <input type="text" id="name"   name="name" required><br>
- <label form="email">email</label>
- <input type="email" id="email" name="email" required><br>
- <label for="message">Mensaje</label>
- <textarea id="message" name="message" required></textarea><br>
- <input type="submit" value="Enviar">
-    </form>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="mi primer Portafolio" href="mi primer portafolio.css"
+    
+
+    <title>Mi Portafolio</title>
+    <header>
+        <h1>MI PORTAFOLIO</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Sobre Mí</h2>
+        <p>Hola, soy Fabian Yesid Araque Florez, un desarrollador web apasionado por facilitar peliculas onlinne.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portafolio</h2>
+        
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide fade">
+                        <img src="imagen1.jpg" alt="Imagen 1">
+                    </div>
+                    <div class="slide fade">
+                        <img src="imagen2.jpg" alt="Imagen 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="imagen3.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="slide fade">
+                        <img src="imagen4.jpg" alt="Imagen 4">
+                    </div>
+                    <!-- Puedes añadir más imágenes aquí -->
+                </div>
+            </div>
+        
+            <script src="script.js"></script>
+
+        <div class="gallery">
+            <div class="project">
+                <p>En este proyecto utilicé HTML para incorporar diferentes elementos de diseño y crear una página web sobre peliculas atractiva.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form action="submit" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
     </section>
 </body>
 </html>
